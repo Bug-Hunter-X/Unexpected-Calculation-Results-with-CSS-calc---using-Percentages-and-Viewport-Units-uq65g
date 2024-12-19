@@ -1,0 +1,10 @@
+/* bugSolution.css */
+/* Use alternative calculation methods to avoid unexpected behavior
+   For example, calculate the values separately and then combine them, or use only one unit type. */
+
+#element {
+  width: calc(50% - 10vw); /* Example: Problematic calculation */
+  width: 50%; /* Example of alternative. adjust based on the intended result */ 
+  margin-left: calc( (100vw - 50%) /2 ); /* Another example of a problematic calculation. */
+  margin-left: 25vw; /*Example of alternative. adjust based on the intended result */ 
+}
